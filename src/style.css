@@ -1,4 +1,10 @@
 .hello {
     color: red;
     font-size: 5vh;
+    display: flex;
+    flex-direction: column;
   }
+
+.hello > img {
+  width: 150px;
+}
