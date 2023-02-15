@@ -1,6 +1,6 @@
 import _ from "lodash";
 import "./style.css";
-import logo from "./logo.svg";
+import logo from "./assets/images/logo.svg";
 
 function component() {
   const element = document.createElement("div");
