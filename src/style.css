@@ -8,3 +8,8 @@
 .hello > img {
   width: 150px;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
