@@ -69,7 +69,15 @@ function component() {
 
 document.body.appendChild(component());
 
-const todos = (title, description, dueDate, priority, notes, checklist) => {
+const todos = (
+  title,
+  description,
+  dueDate,
+  priority,
+  notes,
+  checklist,
+  project
+) => {
   return { title, description, dueDate, priority, notes, checklist };
 };
 
@@ -83,3 +91,16 @@ const firstTodo = todos(
 );
 
 console.table({ firstTodo });
+
+//  explanation + pseudo-code (You created this app, gz)
+//  user opens the app -> generate page including sidebar with projects, today, upcoming)
+//  The default page is Project: Default
+//  Generate a todo and automatically put it in default list
+//  *IF you need one of something, create module. If many, create factorial*
+//  Factorial of todos, factorial of projects, create todo (module), create project (module) etc
+//  Auto create first project, when you create todo you auto push it to your desired project array
+
+const projects = (title, amount) => {
+  content = [];
+  return { title, amount, content };
+};
