@@ -101,6 +101,10 @@ console.table({ firstTodo });
 //  Auto create first project, when you create todo you auto push it to your desired project array
 
 const projects = (title, amount) => {
-  content = [];
+  const content = [];
   return { title, amount, content };
 };
+
+const defaultProject = projects("Default project", "0");
+
+console.table({ defaultProject });
