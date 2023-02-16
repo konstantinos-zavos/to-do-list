@@ -69,16 +69,21 @@ function component() {
 
 document.body.appendChild(component());
 
-const todos = (
-  title,
-  description,
-  dueDate,
-  priority,
-  notes,
-  checklist,
-  project
-) => {
-  return { title, description, dueDate, priority, notes, checklist };
+const todos = (title, description, dueDate, priority, notes, checklist) => {
+  pushToProject();
+  return {
+    title,
+    description,
+    dueDate,
+    priority,
+    notes,
+    checklist,
+    pushToProject,
+  };
+};
+
+const pushToProject = () => {
+  console.log("this works");
 };
 
 const firstTodo = todos(
