@@ -113,3 +113,20 @@ defaultProject.content.push(firstTodo);
 
 console.log(defaultProject.content);
 console.log(defaultProject.content[0]);
+
+// If you don't need multiple of something, for example multiple objects for each ToDo,
+// then simply create a factorial function which you call whenever you need a new object
+// Else, if you need one thing that you will do a task for you, for example create a todo
+// then create a module
+// Let's test if this hypothesis is correct
+
+//  Below code doesn't work sadly but my main idea is correct
+//  You gotta create a module that creates tasks simple as that, instead of creating them externally
+
+
+// const toDoCreator = (() => {
+//   const createTodo = todos(prompt("does this actually work?"));
+//   return {
+//     createTodo,
+//   };
+// })();
