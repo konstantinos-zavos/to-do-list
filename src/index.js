@@ -55,6 +55,34 @@ function content() {
 
 content();
 
+function nav() {
+  const content = document.querySelector("#content");
+  const nav = document.createElement("div");
+  nav.setAttribute("id", "nav");
+  content.appendChild(nav);
+
+  const ul = document.createElement("ul");
+  ul.setAttribute("id", "ul");
+  nav.appendChild(ul);
+
+  const ulSelect = document.querySelector("#ul");
+  const listItemOne = document.createElement("li");
+  listItemOne.textContent = "Default project";
+  ulSelect.appendChild(listItemOne);
+
+  const listItemTwo = document.createElement("li");
+  listItemTwo.textContent = "Second project";
+  ulSelect.appendChild(listItemTwo);
+
+  const listItemThree = document.createElement("li");
+  listItemThree.textContent = "Third project";
+  ulSelect.appendChild(listItemThree);
+}
+
+nav();
+
+// v v v v v This code is not needed
+
 function component() {
   const element = document.createElement("div");
   const btn = document.createElement("button");
@@ -77,8 +105,9 @@ function component() {
 }
 
 const test = document.querySelector("#content");
-
 test.appendChild(component());
+
+// ^ ^ ^ ^ ^ This code is not needed
 
 const todos = (title, description, dueDate, priority, notes, checklist) => {
   return {
@@ -130,13 +159,3 @@ console.log(defaultProject.content[0]);
 // Else, if you need one thing that you will do a task for you, for example create a todo
 // then create a module
 // Let's test if this hypothesis is correct
-
-//  Below code doesn't work sadly but my main idea is correct
-//  You gotta create a module that creates tasks simple as that, instead of creating them externally
-
-// const toDoCreator = (() => {
-//   const createTodo = todos(prompt("does this actually work?"));
-//   return {
-//     createTodo,
-//   };
-// })();
