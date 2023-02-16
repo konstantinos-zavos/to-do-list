@@ -70,7 +70,6 @@ function component() {
 document.body.appendChild(component());
 
 const todos = (title, description, dueDate, priority, notes, checklist) => {
-  pushToProject();
   return {
     title,
     description,
@@ -78,12 +77,7 @@ const todos = (title, description, dueDate, priority, notes, checklist) => {
     priority,
     notes,
     checklist,
-    pushToProject,
   };
-};
-
-const pushToProject = () => {
-  console.log("this works");
 };
 
 const firstTodo = todos(
@@ -113,3 +107,9 @@ const projects = (title, amount) => {
 const defaultProject = projects("Default project", "0");
 
 console.table({ defaultProject });
+
+// Push todo to default array
+defaultProject.content.push(firstTodo);
+
+console.log(defaultProject.content);
+console.log(defaultProject.content[0]);
