@@ -46,6 +46,15 @@ function header() {
 
 header();
 
+function content() {
+  const body = document.querySelector("body");
+  const contentDiv = document.createElement("div");
+  contentDiv.setAttribute("id", "content");
+  body.appendChild(contentDiv);
+}
+
+content();
+
 function component() {
   const element = document.createElement("div");
   const btn = document.createElement("button");
@@ -67,7 +76,9 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+const test = document.querySelector("#content");
+
+test.appendChild(component());
 
 const todos = (title, description, dueDate, priority, notes, checklist) => {
   return {
@@ -122,7 +133,6 @@ console.log(defaultProject.content[0]);
 
 //  Below code doesn't work sadly but my main idea is correct
 //  You gotta create a module that creates tasks simple as that, instead of creating them externally
-
 
 // const toDoCreator = (() => {
 //   const createTodo = todos(prompt("does this actually work?"));
