@@ -3,50 +3,6 @@ import "./style.css";
 import logo from "./assets/images/logo.svg";
 import printMe from "./print.js";
 
-function header() {
-  const body = document.querySelector("body");
-
-  const topBar = document.createElement("div");
-  topBar.setAttribute("id", "top-bar");
-  body.appendChild(topBar);
-
-  const headerLeftItems = document.createElement("div");
-  headerLeftItems.setAttribute("class", "header-left-items");
-  topBar.appendChild(headerLeftItems);
-
-  const burger = document.createElement("button");
-  burger.setAttribute("class", "burger");
-  burger.setAttribute("id", "burger");
-  burger.textContent = "burger";
-  headerLeftItems.appendChild(burger);
-
-  const home = document.createElement("button");
-  home.setAttribute("class", "home");
-  home.textContent = "home";
-  headerLeftItems.appendChild(home);
-
-  const headerRightItems = document.createElement("div");
-  headerRightItems.setAttribute("class", "header-right-items");
-  topBar.appendChild(headerRightItems);
-
-  const addItem = document.createElement("button");
-  addItem.setAttribute("class", "addItem");
-  addItem.textContent = "addItem";
-  headerRightItems.appendChild(addItem);
-
-  const notification = document.createElement("button");
-  notification.setAttribute("class", "notification");
-  notification.textContent = "notification";
-  headerRightItems.appendChild(notification);
-
-  const profile = document.createElement("button");
-  profile.setAttribute("class", "profile");
-  profile.textContent = "profile";
-  headerRightItems.appendChild(profile);
-}
-
-header();
-
 function content() {
   const body = document.querySelector("body");
   const contentDiv = document.createElement("div");
@@ -153,5 +109,3 @@ console.table({ firstTodo });
 console.table({ defaultProject });
 console.log(defaultProject.content);
 console.log(defaultProject.content[0]);
-
-
