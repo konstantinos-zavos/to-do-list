@@ -138,16 +138,6 @@ const firstTodo = todos(
   "**checkbox**"
 );
 
-console.table({ firstTodo });
-
-//  explanation + pseudo-code (You created this app, gz)
-//  user opens the app -> generate page including sidebar with projects, today, upcoming)
-//  The default page is Project: Default
-//  Generate a todo and automatically put it in default list
-//  *IF you need one of something, create module. If many, create factorial*
-//  Factorial of todos, factorial of projects, create todo (module), create project (module) etc
-//  Auto create first project, when you create todo you auto push it to your desired project array
-
 const projects = (title, amount) => {
   const content = [];
   return { title, amount, content };
@@ -155,16 +145,13 @@ const projects = (title, amount) => {
 
 const defaultProject = projects("Default project", "0");
 
-console.table({ defaultProject });
-
 // Push todo to default array
 defaultProject.content.push(firstTodo);
 
+// console logs
+console.table({ firstTodo });
+console.table({ defaultProject });
 console.log(defaultProject.content);
 console.log(defaultProject.content[0]);
 
-// If you don't need multiple of something, for example multiple objects for each ToDo,
-// then simply create a factorial function which you call whenever you need a new object
-// Else, if you need one thing that you will do a task for you, for example create a todo
-// then create a module
-// Let's test if this hypothesis is correct
+
