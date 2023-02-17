@@ -16,6 +16,7 @@ function header() {
 
   const burger = document.createElement("button");
   burger.setAttribute("class", "burger");
+  burger.setAttribute("id", "burger");
   burger.textContent = "burger";
   headerLeftItems.appendChild(burger);
 
@@ -59,6 +60,7 @@ function nav() {
   const content = document.querySelector("#content");
   const nav = document.createElement("div");
   nav.setAttribute("id", "nav");
+  nav.setAttribute("class", "active");
   content.appendChild(nav);
 
   const ul = document.createElement("ul");
@@ -81,6 +83,12 @@ function nav() {
 }
 
 nav();
+
+const toggle = document.getElementById("burger");
+// const nav = document.getElementById('nav');
+toggle.addEventListener("click", () => {
+  document.getElementById("nav").classList.toggle("active");
+});
 
 // v v v v v This code is not needed
 

@@ -53,18 +53,22 @@ body {
   gap:10px;
   align-items: center;
   justify-content: center;
-  flex: 1;
+  flex-grow: 1;
   background-color: rgba(203, 220, 235, 0.253);
-
 }
 
-#nav {
+#nav.active {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 20vw;
   padding: 10px;
   background-color: rgba(147, 175, 199, 0.068);
+  transition: transform .4s ease;
+}
+
+#nav {
+  display:none;
 }
 
 #nav ul {
