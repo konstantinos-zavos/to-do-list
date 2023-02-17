@@ -67,15 +67,16 @@ function nav() {
 
   const ulSelect = document.querySelector("#ul");
   const listItemOne = document.createElement("li");
-  listItemOne.innerHTML = `<a href="#">First project</a>`;
+  listItemOne.innerHTML = `<a style="color:red;" href="#">Default project</a>`;
+  listItemOne.setAttribute("class", "active");
   ulSelect.appendChild(listItemOne);
 
   const listItemTwo = document.createElement("li");
-  listItemTwo.innerHTML = `<a href="#">Second project</a>`;
+  listItemTwo.innerHTML = `<a href="#">Work</a>`;
   ulSelect.appendChild(listItemTwo);
 
   const listItemThree = document.createElement("li");
-  listItemThree.innerHTML = `<a href="#">Third project</a>`;
+  listItemThree.innerHTML = `<a href="#">Personal</a>`;
   ulSelect.appendChild(listItemThree);
 }
 
