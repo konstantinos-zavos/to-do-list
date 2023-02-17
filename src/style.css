@@ -30,7 +30,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #282828;   
+  /* background-color: #282828;    */
+  background-color: rgba(255, 0, 0, 0.777);
 }
 
 .header-right-items,
@@ -48,13 +49,13 @@ body {
 
 .hello {
   display: flex;
-  background-color:white;
-  margin-top: 25px;
   padding: 10px;
   gap:10px;
   align-items: center;
   justify-content: center;
   flex: 1;
+  background-color: rgba(203, 220, 235, 0.253);
+
 }
 
 #nav {
@@ -63,6 +64,7 @@ body {
   justify-content: center;
   width: 20vw;
   padding: 10px;
+  background-color: rgba(147, 175, 199, 0.068);
 }
 
 #nav ul {
