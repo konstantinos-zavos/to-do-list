@@ -13,7 +13,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Output Management",
+      title: "To-Do-List",
+      template: "src/index.html",
     }),
   ],
   output: {
