@@ -62,7 +62,7 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  width: 20vw;
+  width: 27vw;
   background-color: rgba(147, 175, 199, 0.068);
   transform: translateX(-100%);
   transition: transform .4s ease;
@@ -101,5 +101,6 @@ li:hover {
 }
 
 li {
-  padding: 10px 8px;
+  padding: 10px 35px;
+  width: 100%
 }
