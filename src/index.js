@@ -3,14 +3,14 @@ import "./style.css";
 import logo from "./assets/images/logo.svg";
 import printMe from "./print.js";
 
-function content() {
-  const body = document.querySelector("body");
-  const contentDiv = document.createElement("div");
-  contentDiv.setAttribute("id", "content");
-  body.appendChild(contentDiv);
-}
+// function content() {
+//   const body = document.querySelector("body");
+//   const contentDiv = document.createElement("div");
+//   contentDiv.setAttribute("id", "content");
+//   body.appendChild(contentDiv);
+// }
 
-content();
+// content();
 
 function nav() {
   const content = document.querySelector("#content");
