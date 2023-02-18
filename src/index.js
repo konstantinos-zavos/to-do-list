@@ -4,13 +4,12 @@ import logo from "./assets/images/logo.svg";
 import printMe from "./print.js";
 
 const toggle = document.getElementById("burger");
-// const nav = document.getElementById('nav');
+const nav = document.getElementById("nav");
 toggle.addEventListener("click", () => {
-  document.getElementById("nav").classList.toggle("active");
+  nav.classList.toggle("active");
 });
 
-// v v v v v This code is not needed
-
+// Sample content
 function component() {
   const element = document.createElement("div");
   const btn = document.createElement("button");
@@ -32,11 +31,10 @@ function component() {
   return element;
 }
 
-const test = document.querySelector("#content");
-test.appendChild(component());
+// const test = document.querySelector("#content");
+// test.appendChild(component());
 
-// ^ ^ ^ ^ ^ This code is not needed
-
+// To-do-list logic
 const todos = (title, description, dueDate, priority, notes, checklist) => {
   return {
     title,
