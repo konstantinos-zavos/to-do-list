@@ -3,43 +3,6 @@ import "./style.css";
 import logo from "./assets/images/logo.svg";
 import printMe from "./print.js";
 
-// function content() {
-//   const body = document.querySelector("body");
-//   const contentDiv = document.createElement("div");
-//   contentDiv.setAttribute("id", "content");
-//   body.appendChild(contentDiv);
-// }
-
-// content();
-
-function nav() {
-  const content = document.querySelector("#content");
-  const nav = document.createElement("div");
-  nav.setAttribute("id", "nav");
-  nav.setAttribute("class", "active");
-  content.appendChild(nav);
-
-  const ul = document.createElement("ul");
-  ul.setAttribute("id", "ul");
-  nav.appendChild(ul);
-
-  const ulSelect = document.querySelector("#ul");
-  const listItemOne = document.createElement("li");
-  listItemOne.innerHTML = `<a style="color:red;" href="#">Default project</a>`;
-  listItemOne.setAttribute("class", "active");
-  ulSelect.appendChild(listItemOne);
-
-  const listItemTwo = document.createElement("li");
-  listItemTwo.innerHTML = `<a href="#">Work</a>`;
-  ulSelect.appendChild(listItemTwo);
-
-  const listItemThree = document.createElement("li");
-  listItemThree.innerHTML = `<a href="#">Personal</a>`;
-  ulSelect.appendChild(listItemThree);
-}
-
-nav();
-
 const toggle = document.getElementById("burger");
 // const nav = document.getElementById('nav');
 toggle.addEventListener("click", () => {

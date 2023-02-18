@@ -90,3 +90,6 @@ button {
   padding: 5px;
 }
 
+#nav .active-page {
+  color: #ff0000;
+}
