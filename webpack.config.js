@@ -10,7 +10,6 @@ module.exports = {
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
-    watchContentBase: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
