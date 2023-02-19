@@ -1,13 +1,21 @@
 import "./style.css";
 
+// DOM burger icon event listener
 const toggle = document.getElementById("burger");
 const nav = document.getElementById("nav");
 toggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-// To-do-list logic
-const todos = (title, description, dueDate, priority, notes, checklist) => {
+// Task factory function
+const createTask = (
+  title,
+  description,
+  dueDate,
+  priority,
+  notes,
+  checklist
+) => {
   return {
     title,
     description,
@@ -18,7 +26,8 @@ const todos = (title, description, dueDate, priority, notes, checklist) => {
   };
 };
 
-const firstTodo = todos(
+// Default task
+const testTask = createTask(
   "Morning routine",
   "Skincare routine, breakfast, make bed",
   "Every morning 7:00",
@@ -27,18 +36,19 @@ const firstTodo = todos(
   "**checkbox**"
 );
 
-const projects = (title, amount) => {
+// Project factory function
+const projects = (title, count) => {
   const content = [];
-  return { title, amount, content };
+  return { title, count, content };
 };
 
+// Default project
 const defaultProject = projects("Default project", "0");
 
-// Push todo to default array
-defaultProject.content.push(firstTodo);
+// Push task to Default project array
+defaultProject.content.push(testTask);
 
 // console logs
-console.table({ firstTodo });
-console.table({ defaultProject });
-console.log(defaultProject.content);
+console.table({ testTask });
+console.log(defaultProject);
 console.log(defaultProject.content[0]);
