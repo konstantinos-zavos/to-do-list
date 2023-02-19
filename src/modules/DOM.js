@@ -9,9 +9,18 @@ function sidebarEnabler() {
 }
 
 function createNewTask() {
-  const title = prompt("Enter the name of the task:");
+  const title = document.getElementById("task_name").textContent;
   const task = createTask(title);
+  console.log(task);
   return task;
 }
 
-export { sidebarEnabler };
+export { sidebarEnabler, createNewTask };
+
+
+// Ideas for future self :
+// Create tasks object creator
+// create dummy object for testing purposes 
+// push object into an array
+// go to dom js, and create a function that reads that array
+// per each array object -> create dom
