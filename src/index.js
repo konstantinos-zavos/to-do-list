@@ -1,15 +1,11 @@
 import "./style.css";
-import { createNewTask } from "./modules/tasks";
+// import { createNewTask } from "./modules/tasks";
+import { sidebarEnabler } from "./modules/DOM";
 
-// DOM burger icon event listener
-const toggle = document.getElementById("burger");
-const nav = document.getElementById("nav");
-toggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
+sidebarEnabler();
 
-const test = createNewTask();
-console.log(test);
+// const test = createNewTask();
+// console.log(test);
 
 // Task factory function
 // const createTask = (
