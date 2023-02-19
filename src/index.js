@@ -1,38 +1,10 @@
-import _ from "lodash";
 import "./style.css";
-import logo from "./assets/images/logo.svg";
-import printMe from "./print.js";
 
 const toggle = document.getElementById("burger");
 const nav = document.getElementById("nav");
 toggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
-
-// Sample content
-function component() {
-  const element = document.createElement("div");
-  const btn = document.createElement("button");
-
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
-  element.classList.add("hello");
-  // Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = logo;
-
-  element.appendChild(myIcon);
-
-  btn.innerHTML = "Click me and check the console!";
-  btn.onclick = printMe;
-
-  element.appendChild(btn);
-
-  return element;
-}
-
-// const test = document.querySelector("#content");
-// test.appendChild(component());
 
 // To-do-list logic
 const todos = (title, description, dueDate, priority, notes, checklist) => {
