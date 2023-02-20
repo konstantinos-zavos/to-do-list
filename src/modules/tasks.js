@@ -11,3 +11,7 @@ function createNewTask() {
 }
 
 export { createTask, createNewTask };
+
+// creating new todos <-- curent task
+// What is a todo? An object. How do you create an object? with a factory funciton/constructor/class
+//

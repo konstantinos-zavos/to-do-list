@@ -1,13 +1,11 @@
 import "./style.css";
-// import { createNewTask } from "./modules/tasks";
+import { createNewTask } from "./modules/tasks";
 import { sidebarEnabler } from "./modules/DOM";
-import { createNewTask } from "./modules/DOM";
 
 sidebarEnabler();
 
-const test = document.getElementById("test");
-test.onclick = createNewTask();
-createNewTask();
+const button = document.getElementById("test");
+button.onclick = createNewTask;
 
 // const test = createNewTask();
 // console.log(test);
