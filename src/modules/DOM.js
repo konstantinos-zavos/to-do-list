@@ -5,8 +5,11 @@ function testing() {
   defaultProject.content.forEach((element) => {
     const tester = document.getElementById("content");
     const sample = document.createElement("div");
-    sample.textContent = element.title;
+    sample.textContent = `Name: ${element.title}`;
     tester.appendChild(sample);
+    const sample2 = document.createElement("div");
+    sample2.textContent = `Description: ${element.description}`;
+    tester.appendChild(sample2);
   });
 }
 
