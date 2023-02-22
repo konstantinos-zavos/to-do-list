@@ -1,5 +1,5 @@
 import { defaultProject } from "./projects";
-import { testing } from "./DOM";
+import { printLastArray } from "./DOM";
 
 const createTask = (title, description, dueDate, priority) => {
   return {
@@ -19,7 +19,7 @@ function createNewTask() {
   console.log(task);
   defaultProject.content.push(task);
   console.log(defaultProject);
-  testing();
+  printLastArray();
   return task;
 }
 
