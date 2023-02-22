@@ -1,4 +1,8 @@
 import { defaultProject } from "./projects";
+import { createNewTask } from "./tasks";
+
+const button = document.getElementById("test");
+button.onclick = createNewTask;
 
 function printLastArray() {
   const last = defaultProject.content[defaultProject.content.length - 1];
