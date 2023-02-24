@@ -12,7 +12,7 @@ function printLastArray() {
   taskContainer.appendChild(singleTask);
   const taskTitle = document.createElement("div");
   taskTitle.classList.add("taskTitle");
-  taskTitle.textContent = `Name: ${last.title}`;
+  taskTitle.textContent = `${last.title}`;
   singleTask.appendChild(taskTitle);
   const taskDescription = document.createElement("div");
   taskDescription.classList.add("taskDescription");

@@ -110,11 +110,15 @@ li {
   flex-direction: column;
 }
 
-#taskcontent {
+#taskContainer {
   display: flex;
   flex-direction: column;
   flex: 1;
   align-items: start;
   padding: 50px;
   padding-left: 100px;
+}
+
+.taskTitle {
+  font-size: 4vh;
 }
