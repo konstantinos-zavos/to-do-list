@@ -126,9 +126,10 @@ li {
 #addBtn {
   margin-bottom: 15px;
   padding-top: 30px;
+  cursor: pointer;
 }
 
 .singleTask {
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
-  width: 100%
+  width: 100%;
 }
