@@ -22,19 +22,22 @@ button.onclick = createNewTask;
 // **note: I supposed first it would hide the new task button in order for the task creation to take it's place
 //  and in the end re-show it at the bottom**
 const taskContainer = document.getElementById("taskContainer");
+const taskCreator = document.createElement("div");
+taskCreator.classList.add("taskCreator");
+taskContainer.appendChild(taskCreator);
 const taskTitleInput = document.createElement("input");
 taskTitleInput.setAttribute("id", "taskTitleInput");
 taskTitleInput.placeholder = "Title: Type your task's name here";
-taskContainer.appendChild(taskTitleInput);
+taskCreator.appendChild(taskTitleInput);
 const taskDescriptionInput = document.createElement("input");
 taskDescriptionInput.setAttribute("id", "taskDescriptionInput");
 taskDescriptionInput.placeholder =
   "Description: Type your task's description here";
-taskContainer.appendChild(taskDescriptionInput);
+  taskCreator.appendChild(taskDescriptionInput);
 const createBtn = document.createElement("button");
 createBtn.textContent = "Click me love";
 createBtn.setAttribute("id", "createBtn");
-taskContainer.appendChild(createBtn);
+taskCreator.appendChild(createBtn);
 const createBtnClick = document.getElementById("createBtn");
 createBtnClick.onclick = newTaskTest;
 
