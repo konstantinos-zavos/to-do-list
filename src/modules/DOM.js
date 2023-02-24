@@ -6,17 +6,18 @@ button.onclick = createNewTask;
 
 function printLastArray() {
   const last = defaultProject.content[defaultProject.content.length - 1];
-  console.log(last.title);
-  const tester = document.getElementById("taskcontent");
-  const taskContainer = document.createElement("div");
-  taskContainer.classList.add("singularTask");
-  tester.appendChild(taskContainer);
-  const sample = document.createElement("div");
-  sample.textContent = `Name: ${last.title}`;
-  taskContainer.appendChild(sample);
-  const sample2 = document.createElement("div");
-  sample2.textContent = `Description: ${last.description}`;
-  taskContainer.appendChild(sample2);
+  const taskContainer = document.getElementById("taskContainer");
+  const singleTask = document.createElement("div");
+  singleTask.classList.add("singleTask");
+  taskContainer.appendChild(singleTask);
+  const taskTitle = document.createElement("div");
+  taskTitle.classList.add("taskTitle");
+  taskTitle.textContent = `Name: ${last.title}`;
+  singleTask.appendChild(taskTitle);
+  const taskDescription = document.createElement("div");
+  taskDescription.classList.add("taskDescription");
+  taskDescription.textContent = `Description: ${last.description}`;
+  singleTask.appendChild(taskDescription);
 }
 
 export { printLastArray };
