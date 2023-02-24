@@ -155,4 +155,16 @@ li {
 #taskTitleInput {
   font-size: 3vh;
   width: 100%;
+  /* background-color: rgba(128, 128, 128, 0.26); */
 }
+
+#taskDescriptionInput {
+  font-size: 2vh;
+  width: 100%;
+  /* background-color: rgba(128, 128, 128, 0.26); */
+}
+
+/* changes placeholder color */
+/* ::placeholder {
+  color: red;
+} */
