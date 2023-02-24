@@ -27,13 +27,12 @@ taskCreator.classList.add("taskCreator");
 taskContainer.appendChild(taskCreator);
 const taskTitleInput = document.createElement("input");
 taskTitleInput.setAttribute("id", "taskTitleInput");
-taskTitleInput.placeholder = "Title: Type your task's name here";
+taskTitleInput.placeholder = "Task name";
 taskCreator.appendChild(taskTitleInput);
 const taskDescriptionInput = document.createElement("input");
 taskDescriptionInput.setAttribute("id", "taskDescriptionInput");
-taskDescriptionInput.placeholder =
-  "Description: Type your task's description here";
-  taskCreator.appendChild(taskDescriptionInput);
+taskDescriptionInput.placeholder = "Description";
+taskCreator.appendChild(taskDescriptionInput);
 const createBtn = document.createElement("button");
 createBtn.textContent = "Click me love";
 createBtn.setAttribute("id", "createBtn");
