@@ -5,6 +5,7 @@ import plus from "../assets/images/add.svg";
 const addButtonContainer = document.getElementById("test");
 const addButton = document.createElement("img");
 addButton.src = plus;
+addButton.style = "width:25px; ";
 addButtonContainer.appendChild(addButton);
 
 const button = document.getElementById("test");
