@@ -1,5 +1,11 @@
 import { defaultProject } from "./projects";
 import { createNewTask } from "./tasks";
+import plus from "../assets/images/add.svg";
+
+const addButtonContainer = document.getElementById("test");
+const addButton = document.createElement("img");
+addButton.src = plus;
+addButtonContainer.appendChild(addButton);
 
 const button = document.getElementById("test");
 button.onclick = createNewTask;
