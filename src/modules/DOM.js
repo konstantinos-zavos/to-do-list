@@ -1,7 +1,9 @@
 import { defaultProject } from "./projects";
 import { createNewTask } from "./tasks";
 import plus from "../assets/images/add.svg";
+import { doc } from "prettier";
 
+// button div
 const addButtonContainer = document.getElementById("addBtn");
 const addButton = document.createElement("img");
 addButton.src = plus;
@@ -11,8 +13,23 @@ const addText = document.createElement("div");
 addText.textContent = "New Task";
 addButtonContainer.appendChild(addText);
 
+// button event handler
 const button = document.getElementById("addBtn");
 button.onclick = createNewTask;
+
+// task creation space
+// **note: I supposed first it would hide the new task button in order for the task creation to take it's place
+//  and in the end re-show it at the bottom**
+const taskContainer = document.getElementById("taskContainer");
+const taskTitleInput = document.createElement("input");
+taskTitleInput.setAttribute("id", "taskTitleInput");
+taskTitleInput.placeholder = "Title: Type your task's name here";
+taskContainer.appendChild(taskTitleInput);
+const taskDescriptionInput = document.createElement("input");
+taskDescriptionInput.setAttribute("id", "taskDescriptionInput");
+taskDescriptionInput.placeholder =
+  "Description: Type your task's description here";
+taskContainer.appendChild(taskDescriptionInput);
 
 function printLastArray() {
   const last = defaultProject.content[defaultProject.content.length - 1];
