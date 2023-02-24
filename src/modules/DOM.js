@@ -2,13 +2,13 @@ import { defaultProject } from "./projects";
 import { createNewTask } from "./tasks";
 import plus from "../assets/images/add.svg";
 
-const addButtonContainer = document.getElementById("test");
+const addButtonContainer = document.getElementById("addBtn");
 const addButton = document.createElement("img");
 addButton.src = plus;
 addButton.style = "width:25px; ";
 addButtonContainer.appendChild(addButton);
 
-const button = document.getElementById("test");
+const button = document.getElementById("addBtn");
 button.onclick = createNewTask;
 
 function printLastArray() {
