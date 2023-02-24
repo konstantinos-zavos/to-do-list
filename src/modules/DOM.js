@@ -28,6 +28,7 @@ taskContainer.appendChild(taskCreator);
 const taskTitleInput = document.createElement("input");
 taskTitleInput.setAttribute("id", "taskTitleInput");
 taskTitleInput.placeholder = "Task name";
+taskTitleInput.contentEditable = "true";
 taskCreator.appendChild(taskTitleInput);
 const taskDescriptionInput = document.createElement("input");
 taskDescriptionInput.setAttribute("id", "taskDescriptionInput");
@@ -39,6 +40,12 @@ createBtn.setAttribute("id", "createBtn");
 taskCreator.appendChild(createBtn);
 const createBtnClick = document.getElementById("createBtn");
 createBtnClick.onclick = newTaskTest;
+
+// Auto place cursor on task name function
+window.onload = function () {
+  var divElement = document.getElementById("taskTitleInput");
+  divElement.focus();
+};
 
 function printLastArray() {
   const last = defaultProject.content[defaultProject.content.length - 1];
