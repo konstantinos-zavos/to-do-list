@@ -115,4 +115,6 @@ li {
   flex-direction: column;
   flex: 1;
   align-items: start;
+  padding: 50px;
+  padding-left: 100px;
 }
