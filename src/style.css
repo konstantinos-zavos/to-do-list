@@ -156,7 +156,7 @@ li {
 #taskTitleInput {
   font-size: 3vh;
   width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  margin-bottom: 10px;
   /* background-color: rgba(128, 128, 128, 0.26); */
 }
 
@@ -164,6 +164,7 @@ li {
   font-size: 2vh;
   width: 100%;
   margin-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
   /* background-color: rgba(128, 128, 128, 0.26); */
 }
 
