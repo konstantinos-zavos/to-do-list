@@ -1,5 +1,6 @@
 import { defaultProject } from "./projects";
 import { createNewTask } from "./tasks";
+import { newTaskTest } from "./tasks";
 import plus from "../assets/images/add.svg";
 import { doc } from "prettier";
 
@@ -30,6 +31,12 @@ taskDescriptionInput.setAttribute("id", "taskDescriptionInput");
 taskDescriptionInput.placeholder =
   "Description: Type your task's description here";
 taskContainer.appendChild(taskDescriptionInput);
+const createBtn = document.createElement("button");
+createBtn.textContent = "Click me love";
+createBtn.setAttribute("id", "createBtn");
+taskContainer.appendChild(createBtn);
+const createBtnClick = document.getElementById("createBtn");
+createBtnClick.onclick = newTaskTest;
 
 function printLastArray() {
   const last = defaultProject.content[defaultProject.content.length - 1];
