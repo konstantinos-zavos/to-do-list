@@ -7,6 +7,9 @@ const addButton = document.createElement("img");
 addButton.src = plus;
 addButton.style = "width:25px; ";
 addButtonContainer.appendChild(addButton);
+const addText = document.createElement("div");
+addText.textContent = "New Task";
+addButtonContainer.appendChild(addText);
 
 const button = document.getElementById("addBtn");
 button.onclick = createNewTask;
