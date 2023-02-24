@@ -122,3 +122,8 @@ li {
 .taskTitle {
   font-size: 4vh;
 }
+
+#addBtn {
+  margin-bottom: 15px;
+  padding-top: 30px;
+}
