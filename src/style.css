@@ -120,6 +120,7 @@ li {
   padding: 50px;
   padding-left: 100px;
   padding-right: 100px;
+  overflow-y: auto;
 }
 
 .taskTitle {
