@@ -108,6 +108,8 @@ li {
 .tasks {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 2vh;
 }
 
 #taskContainer {
@@ -117,6 +119,7 @@ li {
   align-items: start;
   padding: 50px;
   padding-left: 100px;
+  padding-right: 100px;
 }
 
 .taskTitle {
@@ -131,6 +134,9 @@ li {
   gap: 10px;
   font-size: 3vh;
   font-weight: bold;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
 }
 
 .singleTask {
