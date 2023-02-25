@@ -143,6 +143,13 @@ li {
 .singleTask {
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
   width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#alone {
+  display: flex;
+  flex-direction: column;
 }
 
 #taskTitleInput,
@@ -172,3 +179,5 @@ li {
 /* ::placeholder {
   color: red;
 } */
+
+

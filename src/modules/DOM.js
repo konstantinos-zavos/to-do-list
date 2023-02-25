@@ -53,14 +53,25 @@ function printLastArray() {
   const singleTask = document.createElement("div");
   singleTask.classList.add("singleTask");
   taskContainer.appendChild(singleTask);
+
+  const taskComplete = document.createElement("button");
+  taskComplete.classList.add("completionButton");
+  taskComplete.textContent = "Complete";
+  singleTask.appendChild(taskComplete);
+
+  const taskContent = document.createElement("div");
+  taskContent.classList.add("taskContent");
+  singleTask.appendChild(taskContent);
+
   const taskTitle = document.createElement("div");
   taskTitle.classList.add("taskTitle");
   taskTitle.textContent = `${last.title}`;
-  singleTask.appendChild(taskTitle);
+  taskContent.appendChild(taskTitle);
+
   const taskDescription = document.createElement("div");
   taskDescription.classList.add("taskDescription");
   taskDescription.textContent = `Description: ${last.description}`;
-  singleTask.appendChild(taskDescription);
+  taskContent.appendChild(taskDescription);
 }
 
 export { printLastArray };
