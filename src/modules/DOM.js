@@ -5,20 +5,6 @@ import plus from "../assets/images/add.svg";
 import { doc } from "prettier";
 import circle from "../assets/images/circle.svg";
 
-// button div
-const addButtonContainer = document.getElementById("addBtn");
-const addButton = document.createElement("img");
-addButton.src = plus;
-addButton.style = "width:25px; ";
-addButtonContainer.appendChild(addButton);
-const addText = document.createElement("div");
-addText.textContent = "New Task";
-addButtonContainer.appendChild(addText);
-
-// button event handler
-const button = document.getElementById("addBtn");
-button.onclick = createNewTask;
-
 // task creation space
 // **note: I supposed first it would hide the new task button in order for the task creation to take it's place
 //  and in the end re-show it at the bottom**
@@ -37,11 +23,6 @@ const taskDescriptionInput = document.createElement("input");
 taskDescriptionInput.setAttribute("id", "taskDescriptionInput");
 taskDescriptionInput.placeholder = "Description";
 taskCreator.appendChild(taskDescriptionInput);
-
-const createBtn = document.createElement("button");
-createBtn.textContent = "Click me love";
-createBtn.setAttribute("id", "createBtn");
-taskCreator.appendChild(createBtn);
 
 // New button container
 const brandNewButton = document.createElement("div");
