@@ -189,3 +189,17 @@ li {
   border-radius: 20px;
   padding: 25px;
 }
+
+.newButton {
+  margin-bottom: 15px;
+  padding-top: 30px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  font-size: 2vh;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  width: fit-content;
+}

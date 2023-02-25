@@ -26,20 +26,38 @@ const taskContainer = document.getElementById("taskContainer");
 const taskCreator = document.createElement("div");
 taskCreator.classList.add("taskCreator");
 taskContainer.appendChild(taskCreator);
+
 const taskTitleInput = document.createElement("input");
 taskTitleInput.setAttribute("id", "taskTitleInput");
 taskTitleInput.placeholder = "Task name";
 taskTitleInput.contentEditable = "true";
 taskCreator.appendChild(taskTitleInput);
+
 const taskDescriptionInput = document.createElement("input");
 taskDescriptionInput.setAttribute("id", "taskDescriptionInput");
 taskDescriptionInput.placeholder = "Description";
 taskCreator.appendChild(taskDescriptionInput);
+
 const createBtn = document.createElement("button");
 createBtn.textContent = "Click me love";
 createBtn.setAttribute("id", "createBtn");
 taskCreator.appendChild(createBtn);
-const createBtnClick = document.getElementById("createBtn");
+
+// New button container
+const brandNewButton = document.createElement("div");
+brandNewButton.classList.add("newButton");
+brandNewButton.id = "newButton";
+taskCreator.appendChild(brandNewButton);
+// New button
+const newButton = document.createElement("img");
+newButton.src = plus;
+newButton.style = "width:25px; ";
+brandNewButton.appendChild(newButton);
+const newText = document.createElement("div");
+newText.textContent = "New Task";
+brandNewButton.appendChild(newText);
+
+const createBtnClick = document.getElementById("newButton");
 createBtnClick.onclick = newTaskTest;
 
 // Auto place cursor on task name function
