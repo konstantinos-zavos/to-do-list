@@ -6,8 +6,6 @@ import { doc } from "prettier";
 import circle from "../assets/images/circle.svg";
 
 // task creation space
-// **note: I supposed first it would hide the new task button in order for the task creation to take it's place
-//  and in the end re-show it at the bottom**
 const taskContainer = document.getElementById("taskContainer");
 const taskCreator = document.createElement("div");
 taskCreator.classList.add("taskCreator");
@@ -58,6 +56,7 @@ function printLastArray() {
   singleTask.classList.add(taskCounter);
   counter++;
   taskContainer.appendChild(singleTask);
+  taskContainer.insertBefore(singleTask, taskCreator);
 
   const taskComplete = document.createElement("img");
   taskComplete.classList.add("completionButton");
