@@ -147,11 +147,6 @@ li {
   flex-direction: row;
 }
 
-#alone {
-  display: flex;
-  flex-direction: column;
-}
-
 #taskTitleInput,
 #taskTitleInput:focus,
 #taskDescriptionInput,
