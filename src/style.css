@@ -181,3 +181,13 @@ li {
 .completionButton {
   padding: 5px;
 }
+
+
+.completed {
+  opacity: 50%;
+  text-decoration: line-through;
+}
+
+/* .completed > .completionButton {
+
+} */
