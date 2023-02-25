@@ -22,7 +22,51 @@ taskDescriptionInput.setAttribute("id", "taskDescriptionInput");
 taskDescriptionInput.placeholder = "Description";
 taskCreator.appendChild(taskDescriptionInput);
 
-// New button container
+// Auto place cursor on task name function
+window.onload = function () {
+  var divElement = document.getElementById("taskTitleInput");
+  divElement.focus();
+};
+
+// Priority picker
+
+// Container div for prio and date
+const prioAndDate = document.createElement("div");
+prioAndDate.classList.add("prioDate");
+taskCreator.appendChild(prioAndDate);
+
+// Actual form
+
+const form = document.createElement("form");
+
+const label = document.createElement("label");
+label.for = "prio-select";
+label.textContent = "Priority:";
+form.appendChild(label);
+
+const select = document.createElement("select");
+select.id = "prio-select";
+select.name = "prio";
+form.appendChild(select);
+
+const highOption = document.createElement("option");
+highOption.value = "high";
+highOption.textContent = "High";
+select.appendChild(highOption);
+
+const midOption = document.createElement("option");
+midOption.value = "medium";
+midOption.textContent = "Medium";
+select.appendChild(midOption);
+
+const lowOption = document.createElement("option");
+lowOption.value = "low";
+lowOption.textContent = "Low";
+select.appendChild(lowOption);
+
+prioAndDate.appendChild(form);
+
+// Button container (Must always be last)
 const brandNewButton = document.createElement("div");
 brandNewButton.classList.add("newButton");
 brandNewButton.id = "newButton";
@@ -39,11 +83,7 @@ brandNewButton.appendChild(newText);
 const createBtnClick = document.getElementById("newButton");
 createBtnClick.onclick = newTaskTest;
 
-// Auto place cursor on task name function
-window.onload = function () {
-  var divElement = document.getElementById("taskTitleInput");
-  divElement.focus();
-};
+// Print last array function
 
 let counter = 0;
 
