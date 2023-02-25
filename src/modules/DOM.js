@@ -62,7 +62,11 @@ function printLastArray() {
 
   const taskComplete = document.createElement("img");
   taskComplete.classList.add("completionButton");
+  taskComplete.setAttribute("id", "completeBtn");
   taskComplete.src = circle;
+  taskComplete.addEventListener("click", function () {
+    singleTask.classList.add("completed");
+  });
   singleTask.appendChild(taskComplete);
 
   const taskContent = document.createElement("div");
