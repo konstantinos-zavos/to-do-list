@@ -208,3 +208,9 @@ li {
 .taskPrio {
   font-style: italic;
 }
+
+.prioDate {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
