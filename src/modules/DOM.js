@@ -140,6 +140,11 @@ function printLastArray() {
   taskPrio.classList.add("taskPrio");
   taskPrio.textContent = `Urgency: ${last.priority}`;
   taskContent.appendChild(taskPrio);
+
+  const dueDate = document.createElement("div");
+  dueDate.classList.add("dueDate");
+  dueDate.textContent = `Due date: ${last.dueDate}`;
+  taskContent.appendChild(dueDate);
 }
 
 export { printLastArray };
