@@ -173,11 +173,6 @@ li {
   /* background-color: rgba(128, 128, 128, 0.26); */
 }
 
-/* changes placeholder color */
-/* ::placeholder {
-  color: red;
-} */
-
 .completionButton {
   padding: 5px;
   cursor: pointer;
@@ -189,6 +184,8 @@ li {
   text-decoration: line-through;
 }
 
-/* .completed > .completionButton {
-
-} */
+.taskCreator {
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  border-radius: 20px;
+  padding: 25px;
+}
