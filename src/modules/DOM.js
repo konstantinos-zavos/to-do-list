@@ -48,11 +48,16 @@ window.onload = function () {
   divElement.focus();
 };
 
+let counter = 0;
+
 function printLastArray() {
   const last = defaultProject.content[defaultProject.content.length - 1];
   const taskContainer = document.getElementById("taskContainer");
   const singleTask = document.createElement("div");
-  singleTask.classList.add("singleTask");
+  singleTask.setAttribute("id", "singleTask");
+  const taskCounter = "task" + counter;
+  singleTask.classList.add(taskCounter);
+  counter++;
   taskContainer.appendChild(singleTask);
 
   const taskComplete = document.createElement("img");
