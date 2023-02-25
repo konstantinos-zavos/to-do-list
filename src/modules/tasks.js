@@ -27,7 +27,7 @@ function newTaskTest() {
   const title = document.querySelector("#taskTitleInput").value;
   const description = document.querySelector("#taskDescriptionInput").value;
   const dueDate = prompt("Due date?");
-  const priority = prompt("Priority? (0 to 5)");
+  const priority = document.querySelector("#prio-select").value;
   const task = createTask(title, description, dueDate, priority);
   console.log(task);
   defaultProject.content.push(task);

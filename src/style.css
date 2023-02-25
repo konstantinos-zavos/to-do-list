@@ -204,3 +204,7 @@ li {
   padding: 10px;
   width: fit-content;
 }
+
+.taskPrio {
+  font-style: italic;
+}

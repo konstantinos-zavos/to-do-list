@@ -120,6 +120,11 @@ function printLastArray() {
   taskDescription.classList.add("taskDescription");
   taskDescription.textContent = `Description: ${last.description}`;
   taskContent.appendChild(taskDescription);
+
+  const taskPrio = document.createElement("div");
+  taskPrio.classList.add("taskPrio");
+  taskPrio.textContent = `Urgency: ${last.priority}`;
+  taskContent.appendChild(taskPrio);
 }
 
 export { printLastArray };
