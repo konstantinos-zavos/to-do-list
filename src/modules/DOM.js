@@ -3,6 +3,7 @@ import { createNewTask } from "./tasks";
 import { newTaskTest } from "./tasks";
 import plus from "../assets/images/add.svg";
 import { doc } from "prettier";
+import circle from "../assets/images/circle.svg";
 
 // button div
 const addButtonContainer = document.getElementById("addBtn");
@@ -54,9 +55,9 @@ function printLastArray() {
   singleTask.classList.add("singleTask");
   taskContainer.appendChild(singleTask);
 
-  const taskComplete = document.createElement("button");
+  const taskComplete = document.createElement("img");
   taskComplete.classList.add("completionButton");
-  taskComplete.textContent = "Complete";
+  taskComplete.src = circle;
   singleTask.appendChild(taskComplete);
 
   const taskContent = document.createElement("div");
