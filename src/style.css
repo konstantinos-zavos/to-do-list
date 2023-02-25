@@ -192,7 +192,6 @@ li {
 }
 
 .newButton {
-  margin-bottom: 15px;
   padding-top: 30px;
   cursor: pointer;
   display: flex;
@@ -203,6 +202,7 @@ li {
   border-radius: 25px;
   padding: 10px;
   width: fit-content;
+  margin-top: 15px;
 }
 
 .taskPrio {
