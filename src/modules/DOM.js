@@ -66,6 +66,21 @@ select.appendChild(lowOption);
 
 prioAndDate.appendChild(form);
 
+const dateForm = document.createElement("div");
+
+const dateLabel = document.createElement("label");
+dateLabel.setAttribute("for", "date");
+dateLabel.textContent = "Choose a date:";
+dateForm.appendChild(dateLabel);
+
+const input = document.createElement("input");
+input.setAttribute("type", "date");
+input.setAttribute("id", "date");
+input.setAttribute("name", "date");
+dateForm.appendChild(input);
+
+prioAndDate.appendChild(dateForm);
+
 // Button container (Must always be last)
 const brandNewButton = document.createElement("div");
 brandNewButton.classList.add("newButton");
