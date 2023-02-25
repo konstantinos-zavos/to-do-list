@@ -181,8 +181,8 @@ li {
 .completionButton {
   padding: 5px;
   cursor: pointer;
+  filter: invert(23%) sepia(72%) saturate(4383%) hue-rotate(99deg) brightness(94%) contrast(107%);
 }
-
 
 .completed {
   opacity: 50%;
