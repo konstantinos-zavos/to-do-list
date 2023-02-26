@@ -31,6 +31,7 @@ function createProjectInput() {
   createContent.placeholder = "Project name";
   createContent.contentEditable = "true";
   createContainer.appendChild(createContent);
+  createContainer.insertBefore(createContent, newProject);
 }
 
 // task creation space
