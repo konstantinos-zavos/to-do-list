@@ -6,6 +6,14 @@ import { doc } from "prettier";
 import circle from "../assets/images/circle.svg";
 import { isToday, isTomorrow } from "date-fns";
 
+// Nav bar
+
+const projectsDiv = document.getElementById("projects");
+const firstProject = document.createElement("div");
+firstProject.classList.add("defaultProject");
+firstProject.textContent = "Default Project";
+projectsDiv.appendChild(firstProject);
+
 // task creation space
 const taskContainer = document.getElementById("taskContainer");
 const taskCreator = document.createElement("div");
