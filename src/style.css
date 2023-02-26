@@ -146,6 +146,13 @@ li {
   outline: 0;
 }
 
+#projectInput {
+  border: 0;
+  outline: 0;
+  height: 3vh;
+  background-color: transparent;
+}
+
 #taskTitleInput {
   font-size: 3vh;
   width: 100%;

@@ -28,6 +28,7 @@ newProject.appendChild(newProjectText);
 function createProjectInput() {
   const createContainer = document.getElementById("projects");
   const createContent = document.createElement("input");
+  createContent.id = "projectInput";
   createContent.placeholder = "Project name";
   createContent.contentEditable = "true";
   createContainer.appendChild(createContent);
