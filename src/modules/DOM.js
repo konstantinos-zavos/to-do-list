@@ -32,6 +32,8 @@ function createProjectInput() {
   createContent.contentEditable = "true";
   createContainer.appendChild(createContent);
   createContainer.insertBefore(createContent, newProject);
+  const newProjectButton = document.getElementById("newProject");
+  newProjectButton.style.display = "none";
 }
 
 // task creation space
