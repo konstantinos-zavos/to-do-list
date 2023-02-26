@@ -89,6 +89,7 @@ taskCreator.appendChild(brandNewButton);
 // New button
 const newButton = document.createElement("img");
 newButton.src = plus;
+newButton.id = "plusSign"
 newButton.style = "width:25px; ";
 brandNewButton.appendChild(newButton);
 const newText = document.createElement("div");

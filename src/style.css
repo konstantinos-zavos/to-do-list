@@ -127,19 +127,6 @@ li {
   font-size: 4vh;
 }
 
-#addBtn {
-  margin-bottom: 15px;
-  padding-top: 30px;
-  cursor: pointer;
-  display: flex;
-  gap: 10px;
-  font-size: 3vh;
-  font-weight: bold;
-  border: 1px solid black;
-  border-radius: 25px;
-  padding: 10px;
-}
-
 #singleTask {
   border-bottom: 1px solid rgba(0, 0, 0, 0.226);
   width: 100%;
@@ -205,6 +192,11 @@ li {
   margin-top: 15px;
   align-items: center;
   justify-content: center;
+}
+
+.newButton:hover {
+  color: red;
+  scale: 105%;
 }
 
 .taskPrio {
