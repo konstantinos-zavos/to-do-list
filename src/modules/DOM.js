@@ -14,6 +14,16 @@ firstProject.classList.add("defaultProject");
 firstProject.textContent = "Default Project";
 projectsDiv.appendChild(firstProject);
 
+const newProjectPlus = document.createElement("img");
+newProjectPlus.src = plus;
+const newProjectText = document.createElement("div");
+newProjectText.textContent = "New Project";
+const newProject = document.createElement("div");
+newProject.id = "newProject";
+projectsDiv.appendChild(newProject);
+newProject.appendChild(newProjectPlus);
+newProject.appendChild(newProjectText);
+
 // task creation space
 const taskContainer = document.getElementById("taskContainer");
 const taskCreator = document.createElement("div");
