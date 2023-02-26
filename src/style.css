@@ -135,6 +135,12 @@ li {
   align-items: center;
   justify-content: start;
   gap: 1px;
+  background-color: #fbf8f8;
+  border-radius: 15px;
+}
+
+#singleTask:hover {
+  background-color: #ffdada;
 }
 
 #taskTitleInput,
