@@ -4,6 +4,7 @@ import { newTaskTest } from "./tasks";
 import plus from "../assets/images/add.svg";
 import { doc } from "prettier";
 import circle from "../assets/images/circle.svg";
+import { isToday, isTomorrow } from "date-fns";
 
 // task creation space
 const taskContainer = document.getElementById("taskContainer");
@@ -149,9 +150,31 @@ function printLastArray() {
   taskPrio.textContent = `Urgency: ${last.priority}`;
   taskContent.appendChild(taskPrio);
 
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
+
+  const someDate = new Date(last.dueDate);
+
+  if (isToday(someDate)) {
+    console.log("Today");
+  } else if (isTomorrow(someDate)) {
+    console.log("Tomorrow");
+  } else {
+    console.log("Some other day");
+  }
+
   const dueDate = document.createElement("div");
   dueDate.classList.add("dueDate");
-  dueDate.textContent = `Due date: ${last.dueDate}`;
+  // dueDate.textContent = `Due date: ${last.dueDate}`;
+  if (isToday(someDate)) {
+    dueDate.textContent = `Due date: Today (${last.dueDate})`;
+  } else if (isTomorrow(someDate)) {
+    dueDate.textContent = `Due date: Tomorrow (${last.dueDate})`;
+  } else {
+    dueDate.textContent = `Due date: ${last.dueDate}`;
+  }
+
   taskContent.appendChild(dueDate);
 
   clearTaskCreator();
