@@ -20,9 +20,18 @@ const newProjectText = document.createElement("div");
 newProjectText.textContent = "New Project";
 const newProject = document.createElement("div");
 newProject.id = "newProject";
+newProject.onclick = createProjectInput;
 projectsDiv.appendChild(newProject);
 newProject.appendChild(newProjectPlus);
 newProject.appendChild(newProjectText);
+
+function createProjectInput() {
+  const createContainer = document.getElementById("projects");
+  const createContent = document.createElement("input");
+  createContent.placeholder = "Project name";
+  createContent.contentEditable = "true";
+  createContainer.appendChild(createContent);
+}
 
 // task creation space
 const taskContainer = document.getElementById("taskContainer");
