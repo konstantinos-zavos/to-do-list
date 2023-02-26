@@ -89,7 +89,7 @@ taskCreator.appendChild(brandNewButton);
 // New button
 const newButton = document.createElement("img");
 newButton.src = plus;
-newButton.id = "plusSign"
+newButton.id = "plusSign";
 newButton.style = "width:25px; ";
 brandNewButton.appendChild(newButton);
 const newText = document.createElement("div");
@@ -98,6 +98,13 @@ brandNewButton.appendChild(newText);
 
 const createBtnClick = document.getElementById("newButton");
 createBtnClick.onclick = newTaskTest;
+
+function clearTaskCreator() {
+  document.querySelector("#taskTitleInput").value = "";
+  document.querySelector("#taskDescriptionInput").value = "";
+  document.querySelector("#date").value = "";
+  document.querySelector("#prio-select").value = "";
+}
 
 // Print last array function
 
@@ -146,6 +153,8 @@ function printLastArray() {
   dueDate.classList.add("dueDate");
   dueDate.textContent = `Due date: ${last.dueDate}`;
   taskContent.appendChild(dueDate);
+
+  clearTaskCreator();
 }
 
 export { printLastArray };
