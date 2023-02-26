@@ -208,3 +208,7 @@ li {
   flex-direction: row;
   gap: 30px;
 }
+
+#completeBtn:hover {
+  scale: 115%;
+}
