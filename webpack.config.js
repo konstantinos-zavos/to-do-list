@@ -14,13 +14,15 @@ module.exports = {
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
+    allowedHosts: ['.preview.csb.app'],
+    port: 9000,
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: "To-Do-List",
       template: "src/index.html",
     }),
-  ],
+],
   optimization: {
     runtimeChunk: "single",
   },
