@@ -27,12 +27,17 @@ newProject.appendChild(newProjectText);
 
 function createProjectInput() {
   const createContainer = document.getElementById("projects");
+  const contentCreatorContainer = document.createElement("div");
+  contentCreatorContainer.id = "newProjectDiv";
+  createContainer.appendChild(contentCreatorContainer);
+  createContainer.insertBefore(contentCreatorContainer, newProject);
+
   const createContent = document.createElement("input");
   createContent.id = "projectInput";
   createContent.placeholder = "Project name";
   createContent.contentEditable = "true";
-  createContainer.appendChild(createContent);
-  createContainer.insertBefore(createContent, newProject);
+  contentCreatorContainer.appendChild(createContent);
+
   const newProjectButton = document.getElementById("newProject");
   newProjectButton.style.display = "none";
 }
