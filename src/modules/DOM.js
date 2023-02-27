@@ -38,6 +38,11 @@ function createProjectInput() {
   createContent.contentEditable = "true";
   contentCreatorContainer.appendChild(createContent);
 
+  const inputButton = document.createElement("button");
+  inputButton.textContent = "Create";
+  inputButton.id = "inputButton";
+  contentCreatorContainer.appendChild(inputButton);
+
   const newProjectButton = document.getElementById("newProject");
   newProjectButton.style.display = "none";
 }
