@@ -65,7 +65,7 @@ function createProject() {
 
 function deleteButton() {
   const newProjectDiv = document.getElementById("newProjectDiv");
-  newProjectDiv.style.display = "none";
+  newProjectDiv.remove();
 }
 
 // task creation space
