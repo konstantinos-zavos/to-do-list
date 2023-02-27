@@ -41,10 +41,31 @@ function createProjectInput() {
   const inputButton = document.createElement("button");
   inputButton.textContent = "Create";
   inputButton.id = "inputButton";
+  inputButton.onclick = createProject;
   contentCreatorContainer.appendChild(inputButton);
 
   const newProjectButton = document.getElementById("newProject");
   newProjectButton.style.display = "none";
+}
+
+function createProject() {
+  const title = document.querySelector("#projectInput").value;
+  const projectsDiv = document.getElementById("projects");
+  const firstProject = document.createElement("div");
+  firstProject.classList.add("defaultProject");
+  firstProject.textContent = title;
+  projectsDiv.appendChild(firstProject);
+  projectsDiv.insertBefore(firstProject, newProject);
+
+  const newProjectButton = document.getElementById("newProject");
+  newProjectButton.style.display = "flex";
+
+  deleteButton();
+}
+
+function deleteButton() {
+  const newProjectDiv = document.getElementById("newProjectDiv");
+  newProjectDiv.style.display = "none";
 }
 
 // task creation space
