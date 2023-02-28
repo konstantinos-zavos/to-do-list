@@ -5,6 +5,7 @@ import plus from "../assets/images/add.svg";
 import { doc } from "prettier";
 import circle from "../assets/images/circle.svg";
 import { isToday, isTomorrow } from "date-fns";
+import { createNewProject } from "./projects";
 
 // Nav bar
 
@@ -54,6 +55,7 @@ function createProject() {
   const firstProject = document.createElement("div");
   firstProject.classList.add("defaultProject");
   firstProject.textContent = title;
+  createNewProject();
   projectsDiv.appendChild(firstProject);
   projectsDiv.insertBefore(firstProject, newProject);
 

@@ -5,4 +5,11 @@ const projects = (title) => {
 
 const defaultProject = projects("Default project", "0");
 
-export { projects, defaultProject };
+function createNewProject() {
+  const title = document.querySelector("#projectInput").value;
+  const project = projects(title);
+  console.log(project.title);
+  return project;
+}
+
+export { projects, defaultProject, createNewProject };
