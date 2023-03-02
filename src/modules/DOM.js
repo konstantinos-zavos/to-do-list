@@ -1,8 +1,6 @@
 import { defaultProject } from "./projects";
-import { createNewTask } from "./tasks";
 import { newTaskTest } from "./tasks";
 import plus from "../assets/images/add.svg";
-import { doc } from "prettier";
 import circle from "../assets/images/circle.svg";
 import { isToday, isTomorrow } from "date-fns";
 import { createNewProject } from "./projects";

@@ -12,4 +12,6 @@ function createNewProject() {
   return project;
 }
 
+console.log(defaultProject.content);
+
 export { projects, defaultProject, createNewProject };
