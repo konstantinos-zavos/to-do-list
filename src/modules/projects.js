@@ -21,6 +21,8 @@ function createNewProject() {
   return project;
 }
 
+list.content.push(defaultProject);
+
 localStorage.setItem("projects", JSON.stringify(list.content));
 
 console.log(defaultProject.content);
