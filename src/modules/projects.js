@@ -28,4 +28,4 @@ localStorage.setItem("projects", JSON.stringify(list.content));
 console.log(defaultProject.content);
 console.log(projectList.content);
 
-export { projects, defaultProject, createNewProject };
+export { projects, defaultProject, createNewProject, projectList };

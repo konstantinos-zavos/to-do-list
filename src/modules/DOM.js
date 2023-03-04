@@ -4,6 +4,7 @@ import plus from "../assets/images/add.svg";
 import circle from "../assets/images/circle.svg";
 import { isToday, isTomorrow } from "date-fns";
 import { createNewProject } from "./projects";
+import { projectList } from "./projects";
 
 // Nav bar
 
