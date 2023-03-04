@@ -4,9 +4,23 @@ import plus from "../assets/images/add.svg";
 import circle from "../assets/images/circle.svg";
 import { isToday, isTomorrow } from "date-fns";
 import { createNewProject } from "./projects";
-import { projectList } from "./projects";
+import { list } from "./projects";
 
 // Nav bar
+
+function printProjects() {
+  list.content.forEach((element) => console.log(element));
+  // for ( of list.content) {
+  //   const projectsDiv = document.getElementById("projects");
+  //   const testDiv = document.createElement("div");
+  //   testDiv.classList.add("project");
+  //   testDiv.textContent = element;
+  //   projectsDiv.appendChild(testDiv);
+  //   console.log(list.content);
+  // }
+}
+
+// printProjects();
 
 const projectsDiv = document.getElementById("projects");
 const firstProject = document.createElement("div");
@@ -62,6 +76,7 @@ function createProject() {
   newProjectButton.style.display = "flex";
 
   deleteButton();
+  printProjects();
 }
 
 function deleteButton() {

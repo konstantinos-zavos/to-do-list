@@ -18,6 +18,7 @@ function createNewProject() {
   console.log(project.title);
   list.content.push(project);
   console.log(list.content);
+  console.log(list);
   return project;
 }
 
@@ -27,5 +28,6 @@ localStorage.setItem("projects", JSON.stringify(list.content));
 
 console.log(defaultProject.content);
 console.log(projectList.content);
+console.log(list);
 
-export { projects, defaultProject, createNewProject, projectList };
+export { projects, defaultProject, createNewProject, list };
