@@ -244,7 +244,6 @@ function printLastArray() {
 
   const dueDate = document.createElement("div");
   dueDate.classList.add("dueDate");
-  // dueDate.textContent = `Due date: ${last.dueDate}`;
   if (isToday(someDate)) {
     dueDate.textContent = `Due date: Today (${last.dueDate})`;
   } else if (isTomorrow(someDate)) {
